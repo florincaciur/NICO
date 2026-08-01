@@ -6,7 +6,6 @@ Website static și responsive publicat prin GitHub Pages pentru domeniul canonic
 
 Workflow-ul `.github/workflows/pages.yml` publică automat conținutul directorului `NICO` la fiecare push în `main`.
 
-- URL temporar: `https://florincaciur.github.io/NICO/`
 - Domeniu canonic: `https://psihoterapeutnicoletaamihaesi.ro/`
 - Repository: `https://github.com/florincaciur/NICO`
 

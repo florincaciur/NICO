@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "NICO/**"
+      - "scripts/audit-site.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -27,6 +28,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      - name: Validate sitemap, canonicals, links and structured data
+        run: node scripts/audit-site.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
