@@ -33,3 +33,7 @@ Website static, responsive și ușor de publicat în cPanel pentru domeniul cano
 - `robots.txt`, `sitemap.xml`, `llms.txt`, `llms-full.txt` — crawl și răspunsuri AI
 
 Nu este necesar un proces de build. Site-ul poate fi servit direct de Apache/cPanel.
+
+## GitHub Pages
+
+Workflow-ul `.github/workflows/pages.yml` publică automat conținutul acestui director prin GitHub Pages la fiecare push în `main`. Pentru un domeniu personalizat, acesta trebuie configurat în `Settings → Pages`; GitHub Pages nu interpretează fișierul `.htaccess`.
