@@ -80,6 +80,16 @@ for (const file of htmlFiles) {
     }
   }
 
+  for (const match of html.matchAll(/\ssrc=["']([^"']+)["']/gi)) {
+    const source = match[1];
+    if (/^(data:|https?:\/\/)/i.test(source)) continue;
+    const sourceUrl = new URL(source, `${origin}/${file === "index.html" ? "" : file}`);
+    const relativeSource = sourceUrl.pathname.replace(/^\//, "");
+    if (!fs.existsSync(path.join(root, relativeSource))) {
+      errors.push(`${file}: missing local resource ${source}`);
+    }
+  }
+
   pages.push({ file, canonical: canonicals[0], title: titles[0] });
 }
 

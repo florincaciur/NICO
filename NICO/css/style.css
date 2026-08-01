@@ -612,6 +612,98 @@ h3 {
   gap: 20px;
 }
 
+.home-services-grid:not(.is-expanded) > .service-card:nth-child(n + 4) {
+  display: none;
+}
+
+.services-expand-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.services-expand-button {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--white);
+  box-shadow: 0 10px 24px rgba(68, 105, 130, 0.1);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.services-expand-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.services-expand-button svg {
+  width: 19px;
+  height: 19px;
+  transform: rotate(90deg);
+  transition: transform 220ms ease;
+}
+
+.services-expand-button[aria-expanded="true"] svg {
+  transform: rotate(-90deg);
+}
+
+.service-carousel {
+  position: relative;
+}
+
+.service-carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+  padding: 7px 2px 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+
+.service-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.service-carousel-track .service-card {
+  min-width: 0;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.service-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.service-carousel-status {
+  min-width: 88px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.icon-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .service-card,
 .price-card,
 .article-card,
@@ -1183,6 +1275,10 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .service-carousel-track {
+    grid-auto-columns: calc((100% - 20px) / 2);
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1255,6 +1351,10 @@ h3 {
   .form-row,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-carousel-track {
+    grid-auto-columns: 100%;
   }
 
   .stat {

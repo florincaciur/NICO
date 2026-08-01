@@ -146,6 +146,70 @@ if (journey) {
   renderJourney(0);
 }
 
+const expandableServices = document.querySelector("[data-expandable-services]");
+const servicesToggle = document.querySelector("[data-services-toggle]");
+
+if (expandableServices && servicesToggle) {
+  const toggleLabel = servicesToggle.querySelector("[data-services-toggle-label]");
+  servicesToggle.addEventListener("click", () => {
+    const willExpand = servicesToggle.getAttribute("aria-expanded") !== "true";
+    servicesToggle.setAttribute("aria-expanded", String(willExpand));
+    expandableServices.classList.toggle("is-expanded", willExpand);
+    if (toggleLabel) toggleLabel.textContent = willExpand ? "Restrânge serviciile" : "Vezi toate serviciile";
+
+    if (willExpand) {
+      expandableServices.querySelectorAll(".service-card").forEach((card) => card.classList.add("is-visible"));
+    } else {
+      expandableServices.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+}
+
+document.querySelectorAll("[data-service-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-carousel-track]");
+  const cards = [...carousel.querySelectorAll(".service-card")];
+  const previous = carousel.querySelector("[data-carousel-prev]");
+  const next = carousel.querySelector("[data-carousel-next]");
+  const status = carousel.querySelector("[data-carousel-status]");
+  if (!track || !cards.length || !previous || !next) return;
+
+  const metrics = () => {
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const step = cardWidth + gap;
+    const visible = Math.max(1, Math.round((track.clientWidth + gap) / step));
+    const first = Math.min(cards.length - 1, Math.max(0, Math.round(track.scrollLeft / step)));
+    return { step, visible, first };
+  };
+
+  const updateCarousel = () => {
+    const { visible, first } = metrics();
+    const last = Math.min(cards.length, first + visible);
+    previous.disabled = track.scrollLeft <= 3;
+    next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 3;
+    if (status) status.textContent = `${first + 1}–${last} din ${cards.length}`;
+  };
+
+  const moveCarousel = (direction) => {
+    const { step } = metrics();
+    track.scrollBy({ left: direction * step, behavior: "smooth" });
+  };
+
+  previous.addEventListener("click", () => moveCarousel(-1));
+  next.addEventListener("click", () => moveCarousel(1));
+
+  let carouselFrame = 0;
+  track.addEventListener("scroll", () => {
+    cancelAnimationFrame(carouselFrame);
+    carouselFrame = requestAnimationFrame(updateCarousel);
+  }, { passive: true });
+  window.addEventListener("resize", updateCarousel);
+
+  const hashTarget = cards.find((card) => `#${card.id}` === window.location.hash);
+  if (hashTarget) requestAnimationFrame(() => hashTarget.scrollIntoView({ block: "nearest", inline: "center" }));
+  updateCarousel();
+});
+
 document.querySelectorAll(".faq-question").forEach((question) => {
   question.addEventListener("click", () => {
     const isExpanded = question.getAttribute("aria-expanded") === "true";
