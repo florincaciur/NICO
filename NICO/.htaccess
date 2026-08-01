@@ -11,13 +11,9 @@ AddDefaultCharset UTF-8
   RewriteRule ^Sitemap\.xml$ /sitemap.xml [R=301,L]
 
   # HTTPS pentru domeniul canonic
-  RewriteCond %{HTTP_HOST} ^www\.psiholognicoletaamihaesi\.ro$ [NC,OR]
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://psiholognicoletaamihaesi.ro%{REQUEST_URI} [R=301,L]
-
-  # Domeniul alternativ indicat redirecționează la domeniul canonic
-  RewriteCond %{HTTP_HOST} ^(www\.)?psihoterapeutnicoletaamihaesi\.ro$ [NC]
-  RewriteRule ^ https://psiholognicoletaamihaesi.ro%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.psihoterapeutnicoletaamihaesi\.ro$ [NC]
+  RewriteRule ^ https://psihoterapeutnicoletaamihaesi.ro%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 <IfModule mod_headers.c>

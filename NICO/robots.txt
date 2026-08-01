@@ -23,5 +23,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://psiholognicoletaamihaesi.ro/sitemap.xml
-Host: psiholognicoletaamihaesi.ro
+Sitemap: https://psihoterapeutnicoletaamihaesi.ro/sitemap.xml
+Host: psihoterapeutnicoletaamihaesi.ro

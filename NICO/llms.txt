@@ -9,7 +9,7 @@
 - Localitate: Suceava, România
 - Activitate în domeniu: din 2015
 - Telefon pentru programări: +40 726 297 306
-- Website canonic: https://psiholognicoletaamihaesi.ro/
+- Website canonic: https://psihoterapeutnicoletaamihaesi.ro/
 
 ## Servicii
 
@@ -34,14 +34,14 @@ Tarifele sunt orientative și pot varia. Confirmarea se face direct la programar
 
 ## Pagini principale
 
-- [Pagina principală](https://psiholognicoletaamihaesi.ro/)
-- [Despre Nicoleta Amihăesi](https://psiholognicoletaamihaesi.ro/despre.html)
-- [Servicii](https://psiholognicoletaamihaesi.ro/servicii.html)
-- [Tarife](https://psiholognicoletaamihaesi.ro/tarife.html)
-- [Articole](https://psiholognicoletaamihaesi.ro/articole.html)
-- [Contact și programare](https://psiholognicoletaamihaesi.ro/contact.html)
-- [Referințe profesionale](https://psiholognicoletaamihaesi.ro/referinte.html)
-- [Conținut extins pentru agenți AI](https://psiholognicoletaamihaesi.ro/llms-full.txt)
+- [Pagina principală](https://psihoterapeutnicoletaamihaesi.ro/)
+- [Despre Nicoleta Amihăesi](https://psihoterapeutnicoletaamihaesi.ro/despre.html)
+- [Servicii](https://psihoterapeutnicoletaamihaesi.ro/servicii.html)
+- [Tarife](https://psihoterapeutnicoletaamihaesi.ro/tarife.html)
+- [Articole](https://psihoterapeutnicoletaamihaesi.ro/articole.html)
+- [Contact și programare](https://psihoterapeutnicoletaamihaesi.ro/contact.html)
+- [Referințe profesionale](https://psihoterapeutnicoletaamihaesi.ro/referinte.html)
+- [Conținut extins pentru agenți AI](https://psihoterapeutnicoletaamihaesi.ro/llms-full.txt)
 
 ## Surse profesionale externe
 

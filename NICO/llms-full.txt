@@ -26,8 +26,8 @@ Programările se solicită prin telefon, WhatsApp sau SMS la +40 726 297 306. Un
 
 ## Canonicalizare
 
-Domeniul canonic este https://psiholognicoletaamihaesi.ro/. Varianta psihoterapeutnicoletaamihaesi.ro, dacă este configurată, trebuie să redirecționeze permanent către domeniul canonic pentru a evita conținutul duplicat.
+Singurul domeniu canonic este https://psihoterapeutnicoletaamihaesi.ro/. Varianta `www` trebuie să redirecționeze către domeniul apex pentru a evita conținutul duplicat.
 
 ## Proveniența informațiilor
 
-Datele factuale profesionale au fost corelate cu paginile publice Bleu Medical, RoTerapie, Exact.ro, Colegiul Psihologilor din România, Radio TOP Suceava și instituții educaționale. Lista de linkuri este disponibilă la https://psiholognicoletaamihaesi.ro/referinte.html.
+Datele factuale profesionale au fost corelate cu paginile publice Bleu Medical, RoTerapie, Exact.ro, Colegiul Psihologilor din România, Radio TOP Suceava și instituții educaționale. Lista de linkuri este disponibilă la https://psihoterapeutnicoletaamihaesi.ro/referinte.html.
