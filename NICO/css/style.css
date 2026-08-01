@@ -336,6 +336,12 @@ h3 {
   height: 19px;
 }
 
+.button-icon {
+  width: 52px;
+  flex: 0 0 52px;
+  padding: 0;
+}
+
 .hero {
   min-height: calc(100vh - 86px);
   display: grid;
@@ -1265,6 +1271,11 @@ h3 {
   margin-top: 20px;
 }
 
+.footer-social {
+  display: flex;
+  margin-top: 20px;
+}
+
 .site-footer h3 {
   color: var(--white);
   font-size: 16px;
@@ -1285,11 +1296,36 @@ h3 {
 
 .footer-bottom {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.13);
   font-size: 13px;
+}
+
+.footer-facebook {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  flex: 0 0 44px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.footer-facebook:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.footer-facebook svg {
+  width: 21px;
+  height: 21px;
 }
 
 .reveal {

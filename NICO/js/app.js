@@ -105,12 +105,12 @@ if (journey) {
       description: "Lucru colaborativ asupra tiparelor relaționale și a schimbărilor care afectează întregul sistem familial."
     },
     {
-      title: "Evaluare psihologică",
-      description: "Clarificăm profilul emoțional, cognitiv și comportamental, cu recomandări potrivite nevoii evaluate."
+      title: "DBT pentru adolescenți",
+      description: "Abilități practice pentru reglarea emoțiilor, gestionarea crizelor și îmbunătățirea relațiilor, cu implicarea familiei atunci când este potrivit."
     },
     {
-      title: "Terapie ocupațională",
-      description: "Exersarea autonomiei și a abilităților funcționale pentru adulții cu dizabilități intelectuale."
+      title: "Reintegrare socială",
+      description: "Intervenție psihologică în colaborare cu Serviciul de Probațiune, adaptată cerințelor planului solicitat."
     }
   ];
   let activeIndex = 0;
