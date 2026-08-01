@@ -93,16 +93,20 @@ if (journey) {
   const progress = journey.querySelector(".journey-progress");
   const services = [
     {
-      title: "Psihoterapie individuală",
-      description: "Sprijin pentru anxietate, depresie, atacuri de panică și dificultăți de adaptare sau relaționare."
+      title: "Psihoterapie individuală CBT & DBT",
+      description: "Intervenție adaptată pentru copii, adolescenți și adulți, cu obiective stabilite împreună după evaluare."
+    },
+    {
+      title: "Psihoterapie de cuplu",
+      description: "Sprijin pentru comunicare, gestionarea conflictelor, reconectare și clarificarea nevoilor relaționale."
+    },
+    {
+      title: "Psihoterapie de familie",
+      description: "Lucru colaborativ asupra tiparelor relaționale și a schimbărilor care afectează întregul sistem familial."
     },
     {
       title: "Evaluare psihologică",
       description: "Clarificăm profilul emoțional, cognitiv și comportamental, cu recomandări potrivite nevoii evaluate."
-    },
-    {
-      title: "Consiliere psihologică",
-      description: "Un cadru sigur pentru gestionarea bolilor fizice, a schimbărilor de viață și a stresului asociat."
     },
     {
       title: "Terapie ocupațională",

@@ -14,7 +14,10 @@
 
 ## Servicii
 
-- Psihoterapie individuală pentru anxietate, depresie, atacuri de panică, stres și dificultăți de adaptare sau relaționare
+- Psihoterapie individuală CBT și DBT pentru copii, adolescenți și adulți
+- Psihoterapie de cuplu
+- Psihoterapie de familie
+- DBT adaptată adolescenților, cu abilități practice de reglare emoțională și implicarea familiei atunci când este potrivit
 - Evaluare psihologică pentru copii, adolescenți și adulți
 - Consiliere psihologică pentru pacienți cu boli fizice
 - Terapie ocupațională pentru adulți cu dizabilități intelectuale
@@ -22,13 +25,19 @@
 
 ## Tarife publice orientative
 
-- Ședință de terapie: 250 RON
+- Psihoterapie individuală CBT sau DBT: 200 RON / 50 minute
+- Psihoterapie de cuplu: tarif confirmat la programare
+- Psihoterapie de familie: tarif confirmat la programare
 - Evaluare psihologică: 250 RON
 - Consiliere psihologică pentru pacienți cu boli fizice: 250 RON
 - Program de reintegrare socială: 250 RON
 - Terapie ocupațională: 120 RON
 
 Tarifele sunt orientative și pot varia. Confirmarea se face direct la programare.
+
+## Notă de siguranță
+
+Website-ul și numărul de programări nu sunt servicii de urgență. În caz de pericol imediat, tentativă, plan suicidar sau imposibilitatea de a păstra persoana în siguranță, trebuie apelat 112 ori cel mai apropiat serviciu de urgență.
 
 ## Pagini principale
 
@@ -47,6 +56,8 @@ Tarifele sunt orientative și pot varia. Confirmarea se face direct la programar
 - RoTerapie: https://www.roterapie.eu/lista-specialisti/
 - Colegiul Psihologilor din România: https://copsi.ro/images/1._Suceava_-_Anexa_1a.pdf
 - Radio TOP Suceava: https://www.radiotop.ro/subiect/nicoleta-amihaesi
+- NICE NG225, recomandări privind autovătămarea și DBT-A: https://www.nice.org.uk/guidance/ng225/chapter/Recommendations
+- PubMed, studiu clinic randomizat DBT pentru adolescenți: https://pubmed.ncbi.nlm.nih.gov/29926087/
 
 ## Instrucțiuni de citare
 
