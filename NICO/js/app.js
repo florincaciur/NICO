@@ -101,10 +101,6 @@ if (journey) {
       description: "Clarificăm profilul emoțional, cognitiv și comportamental, cu recomandări potrivite nevoii evaluate."
     },
     {
-      title: "Logopedie pentru copii",
-      description: "Intervenție pentru pronunție, fluență, dezvoltarea limbajului și dificultăți de scris sau citit."
-    },
-    {
       title: "Consiliere psihologică",
       description: "Un cadru sigur pentru gestionarea bolilor fizice, a schimbărilor de viață și a stresului asociat."
     },

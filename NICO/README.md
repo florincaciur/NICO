@@ -33,8 +33,8 @@ CNAME  www  florincaciur.github.io
 
 ## Înainte de lansare
 
-- Confirmă adresa exactă unde au loc ședințele.
-- Confirmă toate tarifele, în special logopedia și deplasarea la domiciliu.
+- Confirmă adresa exactă pentru ședințele fizice din Suceava.
+- Confirmă periodic tarifele publicate.
 - Completează documentele juridice cu denumirea, adresa și datele fiscale oficiale ale cabinetului.
 - Testează butoanele WhatsApp, SMS și telefon de pe un dispozitiv mobil.
 - După propagarea DNS, activează `Enforce HTTPS` în GitHub Pages.
@@ -43,7 +43,7 @@ CNAME  www  florincaciur.github.io
 
 - `index.html` — pagina principală
 - `despre.html` — profil profesional
-- `servicii.html` — servicii detaliate, inclusiv logopedie
+- `servicii.html` — servicii psihologice detaliate
 - `tarife.html` — plan tarifar
 - `articole.html` — conținut informațional
 - `contact.html` — contact direct și generator local de mesaj WhatsApp
