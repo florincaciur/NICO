@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://psihoterapeutnicoletaamihaesi.ro/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/nicoleta-amihaesi-portret-768.webp" imagesrcset="assets/nicoleta-amihaesi-portret-480.webp 480w, assets/nicoleta-amihaesi-portret-768.webp 768w, assets/nicoleta-amihaesi-portret-1086.webp 1086w" imagesizes="(max-width: 680px) 86vw, (max-width: 960px) 500px, 470px" type="image/webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=20260801-location">
+  <link rel="stylesheet" href="css/style.css?v=20260801-home-services">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ro_RO">
   <meta property="og:title" content="Psihoterapie CBT & DBT Suceava | Nicoleta Amihăesi">
@@ -220,20 +220,18 @@
           <h2>De la reglarea emoțională la relații mai sănătoase.</h2>
           <p>Intervențiile se adaptează vârstei, obiectivelor și contextului personal sau familial.</p>
         </div>
-        <div class="cards home-services-grid" id="servicii-principale" data-expandable-services>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#heart"/></svg></div><h3>Psihoterapie individuală CBT &amp; DBT</h3><p>Pentru copii, adolescenți și adulți. Planul este adaptat dificultăților, vârstei și obiectivelor stabilite după evaluare.</p><a class="text-link" href="servicii.html#psihoterapie">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#people"/></svg></div><h3>Psihoterapie de cuplu</h3><p>Un cadru pentru comunicare, gestionarea conflictelor, reconectare și clarificarea nevoilor relaționale.</p><a class="text-link" href="servicii.html#cuplu">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#people"/></svg></div><h3>Psihoterapie de familie</h3><p>Sprijin pentru tipare relaționale dificile, schimbări familiale și colaborarea în jurul nevoilor copilului sau adolescentului.</p><a class="text-link" href="servicii.html#familie">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#brain"/></svg></div><h3>Evaluare psihologică</h3><p>Pentru copii, adolescenți și adulți, în funcție de obiectivul clinic, educațional sau de autocunoaștere.</p><a class="text-link" href="servicii.html#evaluare">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#compass"/></svg></div><h3>Consiliere psihologică</h3><p>Sprijin emoțional pentru pacienți cu boli fizice și pentru persoane aflate în perioade de schimbare.</p><a class="text-link" href="servicii.html#consiliere">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#people"/></svg></div><h3>Terapie ocupațională</h3><p>Pentru adulți cu dizabilități intelectuale, cu accent pe autonomie și abilități de viață.</p><a class="text-link" href="servicii.html#ocupationala">Detalii</a></article>
-          <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#spark"/></svg></div><h3>Reintegrare socială</h3><p>Program pentru Serviciul de Probațiune, adaptat cerințelor planului solicitat.</p><a class="text-link" href="servicii.html#reintegrare">Detalii</a></article>
-        </div>
-        <div class="services-expand-control">
-          <button class="services-expand-button" type="button" data-services-toggle aria-expanded="false" aria-controls="servicii-principale">
-            <span data-services-toggle-label>Vezi toate serviciile</span>
-            <svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg>
-          </button>
+        <div class="home-services-carousel" data-service-carousel>
+          <div class="cards home-services-track" id="servicii-principale" data-carousel-track tabindex="0" aria-label="Servicii principale">
+            <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#heart"/></svg></div><h3>Psihoterapie individuală CBT &amp; DBT</h3><p>Pentru copii, adolescenți și adulți. Planul este adaptat dificultăților, vârstei și obiectivelor stabilite după evaluare.</p><a class="text-link" href="servicii.html#psihoterapie">Detalii</a></article>
+            <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#people"/></svg></div><h3>Psihoterapie de cuplu</h3><p>Un cadru pentru comunicare, gestionarea conflictelor, reconectare și clarificarea nevoilor relaționale.</p><a class="text-link" href="servicii.html#cuplu">Detalii</a></article>
+            <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#people"/></svg></div><h3>Psihoterapie de familie</h3><p>Sprijin pentru tipare relaționale dificile, schimbări familiale și colaborarea în jurul nevoilor copilului sau adolescentului.</p><a class="text-link" href="servicii.html#familie">Detalii</a></article>
+            <article class="service-card reveal"><div class="service-icon"><svg aria-hidden="true"><use href="assets/icons.svg#spark"/></svg></div><h3>Reintegrare socială</h3><p>Program pentru Serviciul de Probațiune, adaptat cerințelor planului solicitat.</p><a class="text-link" href="servicii.html#reintegrare">Detalii</a></article>
+          </div>
+          <div class="home-services-controls" aria-label="Navigare servicii principale">
+            <button class="icon-button" type="button" data-carousel-prev aria-label="Serviciul anterior"><svg aria-hidden="true"><use href="assets/icons.svg#arrow-left"/></svg></button>
+            <span class="home-services-status" data-carousel-status aria-live="polite">1 din 4</span>
+            <button class="icon-button" type="button" data-carousel-next aria-label="Serviciul următor"><svg aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></button>
+          </div>
         </div>
       </div>
     </section>
@@ -291,6 +289,6 @@
     <div class="container footer-bottom"><span>© <span data-year>2026</span> Nicoleta Amihăesi. Toate drepturile rezervate.</span><span>Site informativ · Nu oferă servicii de urgență.</span></div>
   </footer>
 
-  <script src="js/app.js?v=20260801-location" defer></script>
+  <script src="js/app.js?v=20260801-home-services" defer></script>
 </body>
 </html>

@@ -146,25 +146,6 @@ if (journey) {
   renderJourney(0);
 }
 
-const expandableServices = document.querySelector("[data-expandable-services]");
-const servicesToggle = document.querySelector("[data-services-toggle]");
-
-if (expandableServices && servicesToggle) {
-  const toggleLabel = servicesToggle.querySelector("[data-services-toggle-label]");
-  servicesToggle.addEventListener("click", () => {
-    const willExpand = servicesToggle.getAttribute("aria-expanded") !== "true";
-    servicesToggle.setAttribute("aria-expanded", String(willExpand));
-    expandableServices.classList.toggle("is-expanded", willExpand);
-    if (toggleLabel) toggleLabel.textContent = willExpand ? "Restrânge serviciile" : "Vezi toate serviciile";
-
-    if (willExpand) {
-      expandableServices.querySelectorAll(".service-card").forEach((card) => card.classList.add("is-visible"));
-    } else {
-      expandableServices.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-}
-
 document.querySelectorAll("[data-service-carousel]").forEach((carousel) => {
   const track = carousel.querySelector("[data-carousel-track]");
   const cards = [...carousel.querySelectorAll(".service-card")];
