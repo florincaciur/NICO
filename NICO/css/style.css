@@ -1361,7 +1361,7 @@ h3 {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .menu-toggle {
     display: grid;
   }
@@ -1393,6 +1393,10 @@ h3 {
     margin: 8px 0 0;
     text-align: center;
   }
+
+}
+
+@media (max-width: 960px) {
 
   .hero-grid,
   .intro-grid,
