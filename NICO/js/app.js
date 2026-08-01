@@ -245,6 +245,20 @@ whatsappForm?.addEventListener("submit", (event) => {
   window.location.href = `https://wa.me/${phoneInternational}?text=${encodeURIComponent(message)}`;
 });
 
+const mapPreview = document.querySelector("[data-map-preview]");
+const mapLoadButton = mapPreview?.querySelector("[data-map-load]");
+
+mapLoadButton?.addEventListener("click", () => {
+  const iframe = document.createElement("iframe");
+  iframe.className = "map-iframe";
+  iframe.title = "Hartă Google Maps pentru cabinetul de pe Strada Doctor Victor Babeș nr. 68, Suceava";
+  iframe.src = mapPreview.dataset.mapSrc;
+  iframe.loading = "eager";
+  iframe.referrerPolicy = "no-referrer-when-downgrade";
+  iframe.allowFullscreen = true;
+  mapPreview.replaceChildren(iframe);
+});
+
 document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });

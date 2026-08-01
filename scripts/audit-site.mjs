@@ -90,6 +90,18 @@ for (const file of htmlFiles) {
     }
   }
 
+  for (const match of html.matchAll(/\ssrcset=["']([^"']+)["']/gi)) {
+    for (const candidate of match[1].split(",")) {
+      const source = candidate.trim().split(/\s+/)[0];
+      if (!source || /^(data:|https?:\/\/)/i.test(source)) continue;
+      const sourceUrl = new URL(source, `${origin}/${file === "index.html" ? "" : file}`);
+      const relativeSource = sourceUrl.pathname.replace(/^\//, "");
+      if (!fs.existsSync(path.join(root, relativeSource))) {
+        errors.push(`${file}: missing local srcset resource ${source}`);
+      }
+    }
+  }
+
   pages.push({ file, canonical: canonicals[0], title: titles[0] });
 }
 

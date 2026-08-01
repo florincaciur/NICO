@@ -32,7 +32,7 @@ CNAME  www  florincaciur.github.io
 
 ## Înainte de lansare
 
-- Confirmă adresa exactă pentru ședințele fizice din Suceava.
+- Verifică periodic adresa publicată a cabinetului: Strada Doctor Victor Babeș nr. 68, Suceava.
 - Confirmă periodic tarifele publicate.
 - Completează documentele juridice cu denumirea, adresa și datele fiscale oficiale ale cabinetului.
 - Testează butoanele WhatsApp, SMS și telefon de pe un dispozitiv mobil.
